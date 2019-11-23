@@ -6,7 +6,6 @@
 }
 body {
   background: #262431
-
 }
 header {
   background: white;
@@ -29,7 +28,6 @@ header > h1 {
   padding: 15px 20px;
   font-family: Asap, sans-serif;
   position: relative;
-
 }
 .badge{
   background: #531722;
@@ -38,17 +36,18 @@ header > h1 {
   padding: 2px 10px;
 }
 #user-label{
+  font-size: 20px;
   position: absolute;
   top: 25px;
   left: -35px;
 
 }
 #computer-label{
+  font-size: 20px;
   position: absolute;
   top: 25px;
   right: -30px;
 }
-
 .result {
   font-size: 40px;
   color: white;
@@ -64,12 +63,11 @@ header > h1 {
   display: inline-block;
   margin: 0 20px;
   opacity: 0.7;
-
 }
 .choice:hover{
   cursor: pointer;
   opacity: 1;
-  transition: all 0.3s ease;
+  transition: all 650ms ease;
 }
 #action-message{
   font-size: 20px;
