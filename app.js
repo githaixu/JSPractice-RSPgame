@@ -20,7 +20,7 @@ function win(u, c){
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore.innerHTML = computerScore;
-  result_p.innerHTML = "あなたは " + u + "<br>コンピューターは " + c + "<br>おめでとう、勝ちました!";
+  result_p.innerHTML = "あなたは " + u + "<br>コンピューターは " + c + "<br>コンピューターに勝ちました!";
   background_div.style.backgroundColor = "Green";
 }
 //負けた場合
@@ -38,7 +38,7 @@ function draw(u, c){
   result_p.innerHTML = "あなたは " + u + "<br>コンピューターは " + c　+ "<br>引き分け!";
   background_div.style.backgroundColor = "Grey";
 }
-
+//ゲームをプレイする
 function game(userChoice){
   const computerChoice = getComputerChoice();
   switch(userChoice + " " + computerChoice){
