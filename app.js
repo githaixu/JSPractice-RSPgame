@@ -20,23 +20,23 @@ function win(u, c){
   userScore++;
   userScore_span.innerHTML = userScore;
   computerScore.innerHTML = computerScore;
-  result_p.innerHTML = "あなたは " + u + "<br>コンピューターは " + c + "<br>コンピューターに勝ちました!";
-  background_div.style.backgroundColor = "Green";
+  result_p.innerHTML = u + "　VS　" + c + "<br>勝ちました!";
+  result_p.style.color = "#A9D5B8";
 }
 //負けた場合
 function lose(u, c){
   computerScore++;
   computerScore_span.innerHTML = computerScore;
   userScore_span.innerHTML = userScore;
-  result_p.innerHTML = "あなたは " + u + "<br>コンピューターは " + c + "<br>負けてしまいました！";
-  background_div.style.backgroundColor = "Tomato";
+  result_p.innerHTML = u + "　VS　" + c + "<br>負けました!";
+  result_p.style.color = "#E69999";
 }
 //引き分けの場合
 function draw(u, c){
   computerScore_span.innerHTML = computerScore;
   userScore_span.innerHTML = userScore;
-  result_p.innerHTML = "あなたは " + u + "<br>コンピューターは " + c　+ "<br>引き分け!";
-  background_div.style.backgroundColor = "Grey";
+  result_p.innerHTML = u + "　VS　" + c + "<br>引き分け!";
+  result_p.style.color = "#FFFDDD";
 }
 //ゲームをプレイする
 function game(userChoice){
